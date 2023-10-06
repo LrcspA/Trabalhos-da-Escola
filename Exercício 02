@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+struct ret{
+  float altura;
+  float largura;
+  float area;
+  float perimetro;
+};
+
+int main(){
+  struct ret retangulo;
+
+  retangulo.altura = 10;
+  retangulo.largura = 15;
+
+retangulo.area = retangulo.altura*retangulo.largura;
+retangulo.perimetro = 2*(retangulo.altura*retangulo.largura);
+
+printf("Esse e o valor da area do retangulo que estamos calculando: %.2f\n\n\n", retangulo.area);
+printf("Esse e o valor do perimentro do retangulo que estamos calculando: %.2f\n\n\n", retangulo.perimetro);
+
+return 0;
+
+}
