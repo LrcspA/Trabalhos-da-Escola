@@ -1,0 +1,42 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+void limpar_entrada()
+{
+    char c;
+    while((c = getchar()) != '\n' && c != EOF) {}
+}
+
+void ler_texto(char *buffer, int length)
+{
+    fgets(buffer, length, stdin);
+    strtok(buffer, "\n");
+}
+
+struct Livro{
+  char nome;
+  char data;
+  int id[5];
+};
+
+int main(){
+struct Livro livro[2];
+
+  printf("Qual o nome do livro que vocce pegou?\n");
+  limpar_entrada();
+  ler_texto(&Livro[0].nome, 50);
+
+  printf("Qual a data de publicacao do livro que voce pegou?\n");
+  ler_texto(&Livro[0].data, 50);
+
+  printf("Qual o id do livro que voce pegou?\n");
+  scanf("%d" &Livro.id);
+
+printf("Entao o livro que voce pegou tem o nome de \n\n %s\n\n", Livro.nome);
+printf("A data que voce pegou foi \n\n %s\n\n", Livro.data);
+printf("o codigo de identificacao e \n\n %d\n\n", Livro.id);
+
+return 0;
+
+}
