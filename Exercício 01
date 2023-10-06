@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+struct Aluno{
+  int idade;
+  char nome[50];
+  float nota;
+};
+
+int main(){
+  struct Aluno aluno[2];
+
+  strcpy(aluno[0].nome, "Leonardo Rafael de Castro");
+  aluno[0].idade = 16;
+  aluno[0].nota = 9.333;
+
+  strcpy(aluno[1].nome, "Kaua Ferreira da Silva");
+  aluno[1].idade = 15;
+  aluno[1].nota = 9.424;
+
+  strcpy(aluno[2].nome, "Eduardo Henrique Nogueira Merli");
+  aluno[2].idade = 15;
+  aluno[2].nota = 9.000;
+
+  printf("=======================================================================================\n\n");
+  printf("Bem vindos ao Instituto Médico Brasileiro Estudantil do Conselho Interestadual do Estado Social(I.M.B.E.C.I.E.S)\n");
+  printf("Temos poucos alunos, 3 no caso, eles sao: \n\n%s\n%s\n%s\n\n", aluno[0].nome, aluno[1].nome, aluno[2].nome);
+  printf("Suas idades sao semelhantes, elas sao: \n\n%d\n%d\n%d\n\n", aluno[0].idade, aluno[1].idade, aluno[2].idade);
+  printf("Suas notas no nosso ultimo teste foram: \n\n%f\n%f\n%f\n\n", aluno[0].nota, aluno[1].nota, aluno[2].nota);
+  printf("=======================================================================================\n\n");
+
+return 0;
+}
