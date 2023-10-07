@@ -1,0 +1,23 @@
+Soma Subtração Multiplicação Divisão
+
+#include<stdio.h>
+
+int main(void){
+    float a, b, c, d, e, f;
+    
+    printf("Digite um numero\n");
+    scanf("%f", &a);
+    
+    printf("Digite um segundo numero\n");
+    scanf("%f", &b);
+    
+    c = a + b;
+    d = a - b;
+    e = a * b;
+    f = a / b;
+    
+    printf("Esse é o valor da soma do numeros: %2f\n", c);
+    printf("Esse é o valor da diferença do numeros: %2f\n", d);
+    printf("Esse é o valor da multiplicacao do numeros: %2f\n", e);
+    printf("Esse é o valor da divisao do numeros: %2f\n", f);
+}
