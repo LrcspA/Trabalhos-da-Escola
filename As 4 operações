@@ -2,19 +2,27 @@ Soma Subtração Multiplicação Divisão
 
 #include<stdio.h>
 
+struct Numeros{
+float a, b, c, d, e, f;
+};
+
 int main(void){
-    float a, b, c, d, e, f;
+    float a, b, c, d, e, f, g, h;
     
     printf("Digite um numero\n");
-    scanf("%f", &a);
+    scanf("%f", &Numeros.a);
+//Tive um problema com o scanf e resolveri depois
     
     printf("Digite um segundo numero\n");
-    scanf("%f", &b);
+    scanf("%f", &Numeros.b);
+//Tive um problema com o scanf e resolveri depois
     
-    c = a + b;
-    d = a - b;
-    e = a * b;
-    f = a / b;
+    Numeros.c = Numeros.a + Numeros.b;
+    Numeros.d = Numeros.a - Numeros.b;
+    Numeros.e = Numeros.b - Numeros.a;
+    Numeros.f = Numeros.a * Numeros.b;
+    Numeros.g = Numeros.a / Numeros.b;
+    Numeros.h = Numeros.b / Numeros.b;
     
     printf("Esse é o valor da soma do numeros: %2f\n", c);
     printf("Esse é o valor da diferença do numeros: %2f\n", d);
